@@ -56,15 +56,15 @@ Aplicação web para gerenciamento de estoque, com interface amigável, backend 
 
 1. **Clone o repositório (se estiver disponível localmente):**
    ```bash
-   git clone https://github.com/JPonchiroli/raffi_estoque.git
-   cd raffi_estoque
+   git clone https://github.com/akivayovkaleo/raffiEstoque
+   cd raffiEstoque
    ```
 
-2. **Suba os containers com Docker Compose ([Repositório Aqui](https://hub.docker.com/r/jponchiroli/raffi_estoque)):**
+2. **Suba os containers com Docker Compose ([Repositório Aqui](https://hub.docker.com/r/akivayovkaleo/raffiEstoque)):**
    ```bash
-   docker pull jponchiroli/raffi_estoque:mysql 
-   docker pull jponchiroli/raffi_estoque:frontend 
-   docker pull jponchiroli/raffi_estoque:backend # Baixa imagens do repositório
+   docker pull akivayovkaleo/raffiEstoque:mysql 
+   docker pull akivayovkaleo/raffiEstoque:frontend 
+   docker pull akivayovkaleo/raffiEstoque:backend # Baixa imagens do repositório
    docker-compose -f docker-compose.prod.yml up -d   # Para subir as imagens diretamente do repositório
    docker-compose -f docker-compose.local.yml up -d   # Para subir as imagens localmente
    ```
@@ -85,8 +85,8 @@ Aplicação web para gerenciamento de estoque, com interface amigável, backend 
 1. **Atualizar tags para repositório:** 
    ```bash
    # No diretório do projeto
-   docker build -t jponchiroli/raffi_estoque:frontend ./frontend
-   docker build -t jponchiroli/raffi_estoque:backend ./backend
+   docker build -t akivayovkaleo/raffiEstoque:frontend ./frontend
+   docker build -t akivayovkaleo/raffiEstoque:backend ./backend
    ```
 
 
